@@ -48,7 +48,16 @@ function ShoppingListCheckOffService(){
     toBuy.push({
         name : "Fruits",
         quantity : 2
-    })
+    });
+    toBuy.push({
+        name : "Donuts",
+        quantity : 5
+    });
+    toBuy.push({
+        name : "Chocolates",
+        quantity : 5
+    });
+
 
     var bought = [];
 
