@@ -1,0 +1,9 @@
+<div class="list-group">
+        <a href="#" ng-repeat="item in menulist.items" class="list-group-item ">
+                <h4 class="list-group-item-heading">{{item.name}}</h4>
+                  <small>{{item.short_name}}</small>
+                <p class="list-group-item-text">{{item.description}}</p>
+                <button ng-click="menulist.onRemove({index:$index})" class="btn btn-primary">Don't want this one!</button>
+        </a>
+ </div>
+<div ng-if="menulist.errorHandler()" class="alert alert-danger" >Nothing Found!</div>
